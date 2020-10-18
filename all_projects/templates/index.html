@@ -1,0 +1,64 @@
+  {% extends 'base.html' %}
+
+{% block content %}
+
+<section>
+
+<div class="jumbotron card card-image pt-5 " style="background-image: url({{url_for('static', filename ='logo/gradient.jpg')}}); height: 100%;">
+  <div class="text-white text-center py-5 px-4">
+    <div>
+      <h2 class="card-title h1-responsive pt-3 mb-5 font-bold"><strong>DATA SCIENCE & AUTOMATION</strong></h2>
+      <p class="mx-5 mb-5 ">
+        I am a passionate data scientist and am particularly enthusiastic about the interface between data science and automation.
+      </p>
+    </div>
+  </div>
+</div>
+    <!--Grid row-->
+    <div class="row mx-1">
+
+        <!--Grid column-->
+        <div class="col-md-6 mb-4">
+            <div class="card card-image" style="background-image: url({{url_for('static', filename ='logo/sudoku.jpg')}}); height:100%;">
+              <!-- background-image: url({{ url_for('static', filename='img/home.jpg') }}) -->
+                <div class=" text-center d-flex align-items-center rgba-black-strong py-5 px-4">
+                    <div>
+                        <h6 class="green-text"><i class="fas fa-chart-pie"></i><strong> Latest Project</strong></h6>
+                        <h3 class="card-title py-3 font-weight-bold"><strong>Sudoku Solver</strong></h3>
+                        <p class="pb-3 bg-info">
+                          Used opencv for finding grid and number and tensorflow for number recognition.
+                        </p>
+                        <a class="btn btn-secondary btn-rounded" href="" target="_blank">
+                          <i class="far fa-clone left"></i> View project</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-md-6 mb-4">
+            <div class="card card-image"
+            style="background-image: url({{url_for('static', filename ='logo/tensorflow.png')}}); height:100%;">
+                <div class="text-center d-flex align-items-center rgba-black-strong py-5 px-4">
+                    <div>
+                        <h6 class="green-text"><i class="far fa-eye"></i><strong> Latest Course</strong></h6>
+                        <h3 class="card-title py-3 font-weight-bold"><strong>Tensorflow In Practice</strong></h3>
+                        <p class="pb-3 bg-info">Discovered the tools used to build scalable AI-powered algorithms in TensorFlow, a popular open-source machine learning framework.</p>
+                        <a class="btn btn-secondary btn-rounded" href="https://www.coursera.org/account/accomplishments/specialization/LMJL97VTLECX" target="_blank">
+                          <i class="far fa-clone left">
+                          </i>
+                          View Certificate
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Grid column-->
+
+    </div>
+    <!--Grid row-->
+
+</section>
+<!--Projects section v.4-->
+{% endblock %}
